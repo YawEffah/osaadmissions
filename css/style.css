@@ -56,7 +56,20 @@ header{
 }
 
 .features-wrapper{
-    margin: 40px auto;
+    margin: 60px auto;
 }
 
+.feature-item img{
+    width: 60px;
+}
+
+.feature-item{
+    width: 300px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr auto;
+}
 
