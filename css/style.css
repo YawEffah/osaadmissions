@@ -11,7 +11,7 @@ html, body{
 }
 
 header{
-    height: 50px;
+    height: 20px;
     background: #010066;
 }
 
@@ -53,6 +53,10 @@ header{
 
 .read-more-btn{
     background: #fe5b00;
+}
+
+.features-wrapper{
+    margin: 40px auto;
 }
 
 
