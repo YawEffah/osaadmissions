@@ -99,7 +99,9 @@ footer hr{
 }
 
 footer p, a{
+    color: #003665;
 	margin: 6px 0;
+    text-decoration: none;
 }
 
 footer a{
