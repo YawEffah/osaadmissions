@@ -78,4 +78,48 @@ header{
     width: 270px;
 }
 
+.privacy-article{
+    padding: 20px;
+}
 
+
+/*Footer style*/
+footer{
+	padding: 35px 20px;
+	width: 100%;
+    text-align: center;
+	background: darkgrey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+footer hr{
+	margin: 10px 0;
+}
+
+footer p, a{
+	margin: 6px 0;
+}
+
+footer a{
+	margin-right: 25px;
+}
+
+
+@media(min-width: 768px){
+    .privacy-article{
+        padding: 40px 50px;
+    }
+}
+
+@media(min-width: 1200px){
+    .privacy-article{
+        width: 1100px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+}
+
+
+ 
