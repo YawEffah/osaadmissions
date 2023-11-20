@@ -50,9 +50,13 @@ header{
     background: #fe5b00;
 }
 
-.about-article, .features-section, .partners-section{
-    margin: 30px auto;
-    padding: 20px;
+.about-article, 
+.features-section, 
+.review-section, 
+.contact-section,
+.partners-section{
+    margin: 0 auto;
+    padding: 50px 20px;
 }
 
 .partners-section{
@@ -78,6 +82,59 @@ header{
     width: 270px;
 }
 
+.review-section{
+    display: grid;
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.card{
+    width: 18rem;
+    border: 2px solid #010066;
+}
+
+.card-header{
+    height: 30px;
+    color: #010066;
+    display: flex;
+    align-items: center;
+    background: #fe5b00;
+    font-weight: bolder;
+}
+
+.card-user{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #F5F5F5;
+}
+
+.card-user-profile p{
+    font-size: 12px;
+}
+
+.card-user-profile{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-section strong{
+    color: #fe5b00;
+}
+
+.contact-section{
+    background: #003665;
+}
+
+.contact-section h2{
+    color: #fe5b00;
+}
+
+.contact-info{
+    color: #F5F5F5;
+}
+
 .privacy-article{
     padding: 20px;
 }
@@ -101,6 +158,7 @@ footer hr{
 footer p, a{
     color: #003665;
 	margin: 6px 0;
+    font-size: 13px;
     text-decoration: none;
 }
 
