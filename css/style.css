@@ -238,17 +238,15 @@ main h2{
     border-bottom-left-radius: 40px;
 }
 
-
-
 .review-section{
     width: 100%;
     display: grid;
-    grid-gap: 30px;
     justify-content: center;
 }
 
 .testimonials{
     justify-content: center;
+    margin-top: 20px;
 }
 
 .review-section .card{
@@ -381,9 +379,16 @@ footer .socials span{
     margin-left: 10px;
 }
 
+.summary-section{
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 30px;
+    background: #D9D9D9;
+}
 
 
-  
+/*Media Queries*/
 @media (min-width:768px) {
 
     .hero-section h1{
@@ -396,12 +401,10 @@ footer .socials span{
     }
 }
 
-
-/*Media queries for tablet and laptop*/
-
-/* @media (min-width:1000px) {
-
-  
+@media (min-width: 1000px) {
+    .summary-section{
+        width: 800px;
+        margin-top: 100px;
+    }
+    
 }
- */
-

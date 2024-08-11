@@ -51,3 +51,18 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+//when the user clikcs on a nav-link, collapse the navigation
+document.addEventListener("DOMContentLoaded", function () {
+  var navLinks = document.querySelectorAll(".nav-link");
+  var navToggler = document.querySelector(".offcanvas-title");
+  
+  navLinks.forEach(function (navLink) {
+      navLink.addEventListener("click", function () {
+          if (window.innerWidth < 992) {
+              navToggler.click(); 
+          }
+      });
+  });
+});
