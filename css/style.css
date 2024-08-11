@@ -1,105 +1,277 @@
 *{
-    color: #003665;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #1C133D;
+    transition: all 0.2s;
+}
+
+
+a{
+    text-decoration: none;
 }
 
 html, body{
-    background: #F5F5F5;
+    background: #f1f1f1;
 }
 
 header{
-    height: 20px;
-    background: #010066;
+    height: 70px;
+    padding: 10px 0;
+    background: #D9D9D9;
 }
 
-.main-branding{
+.menu-icon{
+    border: 1px solid grey;
+    padding: 0 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-icon .fa{
+    color: grey;
+}
+
+.nav-content{
+    background: #1C133D;
+}
+
+.navbar .offcanvas-title, 
+.offcanvas .fa{
+    color: grey;
+}
+
+.navbar .nav-link{
+    margin: 10px 0;
+    color: grey;
+}
+
+.navbar .nav-link:hover{
+    color: #fe5b00;
+}
+
+.navbar .nav-link .fa{
+    color: grey;
+    margin-right: 20px;
+}
+
+.socials .fa:hover{
+    color: #fe5b00;
+}
+
+.navbar .offcanvas-header{
+    padding: 30px;
+    cursor: pointer;
+}
+
+.offcanvas .fa-close{
+    color: red;
+    font-size: 20px;
+}
+
+.navbar .offcanvas-body{
+    padding: 40px;
+}
+
+.active{
+    color: #fe5b00;
+}
+
+.navbar .socials{
+    width: 50%;
+    margin: 40px auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.main-branding h3{
-    font-size: 16px;
-}
 
-.navbar-collapse{
-    padding: 15px;
-}
-
-.cta-btn{
-    color: white;
-    box-shadow: 0 2px 2px #F5F5F5;
-}
-
-.download-btn{
-    width: 200px;
-    margin: 30px auto;
-    background: #fe5b00;
-}
-
-.banner{
-    width: 100%;
-    height: 250px;
-    background: url('../images/banner.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 40px auto;
-}
-
-.read-more-btn{
-    background: #fe5b00;
-}
-
-.about-article, 
-.features-section, 
-.review-section, 
-.contact-section,
-.partners-section{
-    margin: 0 auto;
-    padding: 50px 20px;
-}
-
-.partners-section{
-    padding: 60px 20px;
-    min-width: 100vw;
-    background: #fe5b00;
-}
-
-.partner-item img, .feature-item img{ 
-    width: 60px;
-}
-
-.partner-item, .feature-item{
-    width: 300px;
-    margin: 20px auto;
-    display: grid;
-    grid-gap: 20px;
+.hero-section{
+    height: 450px;
+    display: flex;
     align-items: center;
-    grid-template-columns: 1fr auto;
+    justify-content: center;
+    background-size: contain;
+    background: url(../images/hero.jpg);
+    background-attachment: fixed;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
 }
 
-.partner-item{
-    width: 270px;
+.hero-section h1{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;   
 }
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cta{
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.cta-get-started{
+    background: #fe5b00;
+    border: none;
+    color: #1C133D;
+}
+
+.cta-contact{
+    background: #fe5b00;
+    color: #1C133D;
+}
+
+.cta-download{
+    color: white;
+    border: 1px solid #fe5b00;
+}
+
+.cta-get-started:hover{
+    color: white;
+    border: 1px solid #fe5b00;
+    background: #1C133D;
+}
+
+.cta-contact:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+.cta-download:hover{
+    background: #fe5b00;
+    border: none;
+    color: #1C133D;
+}
+
+main{
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+main h2{
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.underline{
+    width: 200px;
+    margin: 15px auto;
+    border-radius: 10px;
+    border-bottom: 4px solid #fe5b00;
+}
+
+#features, #reviews{
+    padding-top: 70px;
+}
+
+
+.feature-card{
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background: #D9D9D9;
+}
+
+.feature-icon{
+    width: 60px;
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 50%;
+    background: #f1f1f1;
+}
+
+.feature-icon img{
+    width: 100%;
+}
+
+.feature-card .card-title{
+    font-weight: bold;
+    color: #1C133D;
+}
+
+.feature-card .card-tag{
+    font-size: 14px;
+    color: #fe5b00;
+}
+
+.feature-card:hover {
+    cursor: pointer;
+    background: #c4c1c1;
+}
+
+.our-clients{
+    background: #1C133D;
+    margin-top: 50px;
+}
+
+.our-clients .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.our-clients img{
+    border: 1px solid #939393;
+    padding: 10px 30px;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+.tag{
+    width: 220px;
+    padding: 7px 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    background: #f1f1f1;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+
 
 .review-section{
+    width: 100%;
     display: grid;
     grid-gap: 30px;
     justify-content: center;
 }
 
-.card{
-    width: 18rem;
+.testimonials{
+    justify-content: center;
+}
+
+.review-section .card{
+    width: 19rem;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 15px;
     border: 2px solid #010066;
 }
 
-.card-header{
+.review-section .card-header{
     height: 30px;
     color: #010066;
     display: flex;
     align-items: center;
     background: #fe5b00;
     font-weight: bolder;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.review-section .card-body{
+   text-align: left;
 }
 
 .card-user{
@@ -119,67 +291,117 @@ header{
     align-items: center;
 }
 
-.contact-section strong{
-    color: #fe5b00;
-}
 
-.contact-section{
-    background: #003665;
-}
-
-.contact-section h2{
-    color: #fe5b00;
-}
-
-.contact-info{
-    color: #F5F5F5;
-}
-
-.privacy-article{
-    padding: 20px;
-}
+/* Style for scroll animation */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  /* Animation class to be added when element is in viewport */
+  .animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 
-/*Footer style*/
+  #myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    font-size: 20px; 
+    background: #fe5b00; 
+  }
+  
+  #myBtn:hover {
+    background-color: #898989; /* Add a dark-grey background on hover */
+    transition: 0.5s;
+  }
+
+
+/*Footer styles*/
+
 footer{
-	padding: 35px 20px;
-	width: 100%;
-    text-align: center;
-	background: darkgrey;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+    padding: 60px 20px;
+    background: #1C133D;
 }
 
-footer hr{
-	margin: 10px 0;
+footer .col-md-4{
+    margin-bottom: 30px;
 }
 
-footer p, a{
-    color: #003665;
-	margin: 6px 0;
-    font-size: 13px;
+footer h4{
+    width: 200px;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 2px solid #fe5b00;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+hr{
+    color: #939393;
+}
+
+footer h5{
+    color: #fff;
+}
+
+footer .fa{
+    color: #939393;
+}
+
+footer p, p a{
+    color: #939393;
     text-decoration: none;
 }
 
-footer a{
-	margin-right: 25px;
+footer p{
+    margin-left: 10px;
+}
+
+footer p a:hover{
+    color: #fe5b00;
+}
+
+footer .socials span{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    margin-left: 10px;
 }
 
 
-@media(min-width: 768px){
-    .privacy-article{
-        padding: 40px 50px;
+
+  
+@media (min-width:768px) {
+
+    .hero-section h1{
+        font-size: 3rem;
+    }
+
+    .our-clients .container{
+        grid-gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media(min-width: 1200px){
-    .privacy-article{
-        width: 1100px;
-        margin: 50px auto;
-        padding: 20px;
-    }
+
+/*Media queries for tablet and laptop*/
+
+/* @media (min-width:1000px) {
+
+  
 }
+ */
 
-
- 
