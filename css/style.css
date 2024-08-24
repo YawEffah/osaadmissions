@@ -276,11 +276,13 @@ main h2{
     width: 50px;
     border-radius: 50%;
     margin-right: 5px;
-    border: 1px solid #F5F5F5;
+    padding: 5px;
+    border: 1px solid #ccc;
 }
 
 .card-user-profile p{
     font-size: 12px;
+    text-align: left;
 }
 
 .card-user-profile{
