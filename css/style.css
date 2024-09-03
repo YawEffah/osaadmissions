@@ -47,11 +47,13 @@ header{
     color: grey;
 }
 
+
 .navbar .nav-link:hover{
     color: #fe5b00;
 }
 
 .navbar .nav-link .fa{
+    width: 20px;
     color: grey;
     margin-right: 20px;
 }
@@ -172,6 +174,19 @@ main h2{
     padding-top: 70px;
 }
 
+.step-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
 
 .feature-card{
     border: none;
